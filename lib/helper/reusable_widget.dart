@@ -290,3 +290,27 @@ Widget createCoupon(BuildContext context, String couponRoute, {String? textFill,
     ),
   );
 }
+
+Widget divider1(){
+  return Container(
+    height: 8,
+    color: Colors.grey[100],
+  );
+}
+
+Widget divider2(){
+  return Container(
+    margin: EdgeInsets.symmetric(horizontal: 16),
+    child: Divider(
+      height: 32,
+      color: Colors.grey[400],
+    ),
+  );
+}
+
+Widget divider3(){
+  return Divider(
+    height: 32,
+    color: Colors.grey[400],
+  );
+}
