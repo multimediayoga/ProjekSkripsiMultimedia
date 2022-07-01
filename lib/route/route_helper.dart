@@ -17,7 +17,7 @@ import 'package:kelolapps/view/screens/other_menu/AccountScreen.dart';
 import 'package:kelolapps/view/screens/other_menu/CourseScreen.dart';
 import 'package:kelolapps/view/screens/other_menu/MembershipScreen.dart';
 import 'package:kelolapps/view/screens/other_menu/PromoScreen.dart';
-import 'package:kelolapps/view/screens/other_menu/ReportScreen.dart';
+import 'package:kelolapps/view/screens/mywork/ReportScreen.dart';
 import 'package:kelolapps/view/screens/other_menu/StoreCampaignScreen.dart';
 import 'package:kelolapps/view/screens/other_menu/StoreEmployeeScreen.dart';
 import 'package:kelolapps/view/screens/other_menu/StoreSettingScreen.dart';

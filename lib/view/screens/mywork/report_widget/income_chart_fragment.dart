@@ -67,7 +67,7 @@ class IncomeChartScreenState extends State<IncomeChartScreen> {
             show: true,
             bottomTitles: SideTitles(
               showTitles: true,
-              margin: 20,
+              margin: 20.4,
               getTitles: (double value) {
                 switch (value.toInt()) {
                   case 0:
@@ -91,7 +91,7 @@ class IncomeChartScreenState extends State<IncomeChartScreen> {
             ),
             leftTitles: SideTitles(
               showTitles: true,
-              margin: 16,
+              margin: 16.4,
               reservedSize: 14,
               getTitles: (value) {
                 if (value == 0) {

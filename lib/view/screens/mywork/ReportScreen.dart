@@ -1,12 +1,16 @@
 import 'package:fl_chart/fl_chart.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:kelolapps/config/kelolaku/color_style.dart';
 import 'package:kelolapps/config/kelolaku/text_style.dart';
 import 'package:kelolapps/helper/reusable_widget.dart';
 import 'package:kelolapps/utils/dimensions.dart';
+import 'package:kelolapps/view/screens/mywork/report_widget/income_chart_fragment.dart';
+import 'package:kelolapps/view/screens/mywork/report_widget/pie_most_buy_product_fragment.dart';
+import 'package:kelolapps/view/screens/mywork/report_widget/product_listing_fragment.dart';
+import 'package:kelolapps/view/screens/mywork/report_widget/statistic_member_fragment.dart';
+import 'package:kelolapps/view/screens/mywork/status_global/status_card_list.dart';
 import 'package:nb_utils/nb_utils.dart';
-
-import '../fragments/report_widget/income_chart_screen.dart';
 
 class ReportScreen extends StatefulWidget {
   const ReportScreen({Key? key}) : super(key: key);
@@ -75,6 +79,7 @@ class _ReportScreenState extends State<ReportScreen> {
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(
                       "Kas Toko",
@@ -85,8 +90,8 @@ class _ReportScreenState extends State<ReportScreen> {
                       text: TextSpan(
                         children: [
                           TextSpan(
-                              text: 'Minggu Ini ',
-                              style: heading2.copyWith(
+                              text: '30 Hari Terakhir  ',
+                              style: heading3.copyWith(
                                   color: KelolakuGlobalColor.dark40)),
                           WidgetSpan(
                               child: Icon(
@@ -117,13 +122,12 @@ class _ReportScreenState extends State<ReportScreen> {
                           const WidgetSpan(
                               child: Icon(
                             Icons.add_chart,
-                                size: 15,
+                            size: 15,
                             color: KelolakuGlobalColor.green,
                           )),
                         ],
                       ),
                     ),
-
                     RichText(
                       softWrap: true,
                       text: TextSpan(
@@ -134,10 +138,10 @@ class _ReportScreenState extends State<ReportScreen> {
                                   color: KelolakuGlobalColor.red)),
                           const WidgetSpan(
                               child: Icon(
-                                size: 15,
-                                Icons.stacked_bar_chart,
-                                color: KelolakuGlobalColor.red,
-                              )),
+                            size: 15,
+                            Icons.stacked_bar_chart,
+                            color: KelolakuGlobalColor.red,
+                          )),
                         ],
                       ),
                     ),
@@ -147,11 +151,21 @@ class _ReportScreenState extends State<ReportScreen> {
               IncomeChartScreen(),
               Text(
                 'Pendapatan Bulan ini Rp ${300000.toDouble().toString().formatRupiah()}',
-                style: title20.copyWith(color: KelolakuGlobalColor.colorPrimaryExtra),
+                style: title20.copyWith(
+                    color: KelolakuGlobalColor.colorPrimaryExtra),
               ),
               32.height,
               Container(
                 width: width_widget,
+                decoration: BoxDecoration(
+                    color: KelolakuGlobalColor.light70,
+                    boxShadow: [
+                      BoxShadow(
+                          color: KelolakuGlobalColor.grayFed.withOpacity(.2),
+                          blurRadius: 1,
+                          spreadRadius: 1)
+                    ],
+                    borderRadius: BorderRadius.all(Radius.circular(4))),
                 padding: EdgeInsets.all(Dimensions.MARGIN_SIZE_GRID_8),
                 child: Column(
                   children: [
@@ -159,9 +173,50 @@ class _ReportScreenState extends State<ReportScreen> {
                       alignment: Alignment.topLeft,
                       child: Text(
                         "Produk Terlaris",
-                        style: heading2.copyWith(color: KelolakuGlobalColor.dark60),
+                        style:
+                        title16.copyWith(color: KelolakuGlobalColor.dark),
                       ),
-                    )
+                    ),
+                    PieMostPopularProduct(),
+                    SizedBox(
+                      height: 32,
+                    ),
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: Text(
+                        "Produk Paling Jarang Dibeli",
+                        style:
+                            title14.copyWith(color: KelolakuGlobalColor.dark),
+                      ),
+                    ),
+                    8.height,
+                    ProductListingFragment(),
+                    SizedBox(
+                      height: 32,
+                    ),
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: Text(
+                        "Informasi Status Produk",
+                        style:
+                        title16.copyWith(color: KelolakuGlobalColor.dark),
+                      ),
+                    ),
+                    8.height,
+                    StatusReportCardList(),
+                    SizedBox(
+                      height: 32,
+                    ),
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: Text(
+                        "Perkembangan Toko",
+                        style:
+                            title16.copyWith(color: KelolakuGlobalColor.dark),
+                      ),
+                    ),
+                    8.height,
+                    WAStatisticsComponent(),
                   ],
                 ),
               )
