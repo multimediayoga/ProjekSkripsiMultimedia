@@ -41,6 +41,8 @@ dependencies:
   flutter_svg: ^1.1.0
   badges: ^2.0.2
   carousel_slider: ^4.1.1
+  fl_chart: ^0.36.4
+  syncfusion_flutter_charts: ^20.1.56
 
   #CONNECTIVITY
   http: ^0.13.4
@@ -80,6 +82,7 @@ flutter:
     - assets/kelolapps/
     - assets/store_image/
     - assets/promo/
+    - assets/report/
 
     # Heading Fonts
     - assets/fonts/inter/
