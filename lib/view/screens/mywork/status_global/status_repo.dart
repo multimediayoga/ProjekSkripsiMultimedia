@@ -77,8 +77,8 @@ const t12_foodpanda = "${PUBLIC_IMAGES_URL}/foodpanda.png";
 
 List<T12Service> getSearchList() {
   List<T12Service> list = [];
-  list.add(T12Service(img: t12_transaction, serviceName: "2 Produk Perlu Restok"));
-  list.add(T12Service(img: t12_bill, serviceName: "2 Produk Disembunyikan"));
+  list.add(T12Service(img: t12_transaction, serviceName: "1 Produk Perlu Restok"));
+  list.add(T12Service(img: t12_bill, serviceName: "1 Produk Disembunyikan"));
   list.add(T12Service(img: t12_card, serviceName: "Ada Order yang belum Dilunasi"));
   return list;
 }
