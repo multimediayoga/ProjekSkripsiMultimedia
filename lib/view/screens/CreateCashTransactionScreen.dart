@@ -129,7 +129,7 @@ class _CreateCashTransactionState extends State<CreateCashTransaction> {
                         Dimensions.VERTICAL_SIZE_16.toInt().height,
                         TextFormField(
                           style: textRegular12.copyWith(
-                              color: KelolakuGlobalColor.light60
+                              color: KelolakuGlobalColor.dark
                           ),
                           decoration: InputDecoration(
                             floatingLabelBehavior: FloatingLabelBehavior.never,
@@ -170,7 +170,7 @@ class _CreateCashTransactionState extends State<CreateCashTransaction> {
                   padding: EdgeInsets.only(left: Dimensions.MARGIN_SIZE_GRID_4, right: Dimensions.MARGIN_SIZE_GRID_4, top: Dimensions.VERTICAL_SIZE_16, bottom: Dimensions.VERTICAL_SIZE_16),
                   child:  TextFormField(
                     style: textRegular12.copyWith(
-                        color: KelolakuGlobalColor.light60
+                        color: KelolakuGlobalColor.dark
                     ),
                     decoration: InputDecoration(
                       // floatingLabelBehavior: FloatingLabelBehavior.never,

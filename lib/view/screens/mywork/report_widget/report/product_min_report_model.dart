@@ -70,8 +70,8 @@ class SneakerRepo{
   List<SneakerShoppingModel> getAllFavorite() {
     List<SneakerShoppingModel> list = [];
     list.add(SneakerShoppingModel(name: 'Nike Air VaporMax Evo', subtitle: 'Men\'s shoes', img: 'assets/report/ic_shoes_3.png', amount: '\$300.00'));
-    list.add(SneakerShoppingModel(name: 'Nike Air VaporMax Evo', subtitle: 'Women\'s shoes', img: '$BaseUrl/assets/report/ic_shoes_10.png', amount: '\$200.00'));
-    list.add(SneakerShoppingModel(name: 'Nike Air VaporMax Evo', subtitle: 'Nike Air Huarache', img: '$BaseUrl/assets/report/ic_shoes_11.png', amount: '\$250.00'));
+    // list.add(SneakerShoppingModel(name: 'Nike Air VaporMax Evo', subtitle: 'Women\'s shoes', img: 'assets/report/ic_shoes_4.png', amount: '\$200.00'));
+    // list.add(SneakerShoppingModel(name: 'Nike Air VaporMax Evo', subtitle: 'Nike Air Huarache', img: 'assets/report/ic_shoes_5.jpg', amount: '\$250.00'));
 
     return list;
   }
@@ -80,7 +80,7 @@ class SneakerRepo{
     List<SneakerShoppingModel> list = [];
     list.add(SneakerShoppingModel(name: 'Nike Air VaporMax Evo', subtitle: 'Men\'s shoes', img: 'assets/report/ic_shoes_3.png', amount: '0'));
     list.add(SneakerShoppingModel(name: 'Nike Air VaporMax Evo', subtitle: 'Women\'s shoes', img: 'assets/report/ic_shoes_4.png', amount: '2'));
-    list.add(SneakerShoppingModel(name: 'Nike Air VaporMax Evo', subtitle: 'Nike Air Huarache', img: 'assets/report/ic_shoes_3.png', amount: '2'));
+    list.add(SneakerShoppingModel(name: 'Nike Air VaporMax Evo', subtitle: 'Nike Air Huarache', img: 'assets/report/ic_shoes_5.jpg', amount: '2'));
 
     return list;
   }

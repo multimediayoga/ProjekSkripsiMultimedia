@@ -38,7 +38,7 @@ void showEmployeeOptionSheet(BuildContext context) {
                   ),
                   ListTile(
                     dense: true,
-                    leading: Icon(Icons.cloud_upload_outlined,
+                    leading: Icon(Icons.info_outline,
                         color: KelolakuGlobalColor.dark60.withAlpha(220)),
                     title: const Text(
                         "Informasi Izin Akses Pengurus Toko",
@@ -49,7 +49,7 @@ void showEmployeeOptionSheet(BuildContext context) {
                   ),
                   ListTile(
                     dense: true,
-                    leading: Icon(Icons.camera_alt_outlined,
+                    leading: Icon(Icons.group_add,
                         color: KelolakuGlobalColor.ocean.withAlpha(220)),
                     title: const Text(
                         "Tambahkan Pengurus Toko",

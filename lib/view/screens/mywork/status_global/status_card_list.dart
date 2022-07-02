@@ -5,6 +5,8 @@ import 'package:kelolapps/view/screens/mywork/status_global/status_repo.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 import '../../../../config/kelolaku/constant.dart';
+import '../search_product/SearchStatusProductScreen.dart';
+import '../search_product/search_status_product_widget.dart';
 
 class StatusReportCardList extends StatefulWidget {
   const StatusReportCardList({Key? key}) : super(key: key);
@@ -21,6 +23,12 @@ class _StatusReportCardListState extends State<StatusReportCardList> {
   void initState() {
     super.initState();
     searchDataList.addAll(getSearchList());
+  }
+
+
+  @override
+  void setState(VoidCallback fn) {
+    if (mounted) super.setState(fn);
   }
 
   @override
@@ -58,7 +66,11 @@ class _StatusReportCardListState extends State<StatusReportCardList> {
                 )
               ],
             ).paddingAll(spacing_middle),
-          );
+          ).onTap(() {
+            index == 0 ? Navigator.push(context, MaterialPageRoute(builder: (context) => SearchStatusProductScreen(getProductStatusWhat: 'Habis',))):
+                index == 1 ? Navigator.push(context, MaterialPageRoute(builder: (context) => SearchStatusProductScreen(getProductStatusWhat: "Disembunyikan",))) :
+                null;
+          });
         });
 
     return Container(
