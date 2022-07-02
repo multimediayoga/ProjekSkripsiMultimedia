@@ -14,6 +14,10 @@ import 'package:kelolapps/view/screens/digital_shop/DigitalShopHomeScreen2.dart'
 import 'package:kelolapps/view/screens/digital_shop/DigitalShopInfoScreen.dart';
 import 'package:kelolapps/view/screens/digital_shop/DigitalShopPromoScreen.dart';
 import 'package:kelolapps/view/screens/fragments/main_board/transaction_fragment.dart';
+import 'package:kelolapps/view/screens/mywork/campaign/CampaignAddSocialMediaScreen.dart';
+import 'package:kelolapps/view/screens/mywork/campaign/CampaignPacketScreen.dart';
+import 'package:kelolapps/view/screens/mywork/campaign/CampaignPageScreen.dart';
+import 'package:kelolapps/view/screens/mywork/campaign/CampaignProductScreen.dart';
 import 'package:kelolapps/view/screens/other_menu/AccountScreen.dart';
 import 'package:kelolapps/view/screens/other_menu/CourseScreen.dart';
 import 'package:kelolapps/view/screens/other_menu/MembershipScreen.dart';
@@ -87,13 +91,13 @@ class RouteHelper {
   static String getDigitalStore() => '$digitalStore';
 
   static const String viewDigitalStoreInfo = '/view-store-info';
-  static  String getViewDigitalStoreInfo = '$viewDigitalStoreInfo';
+  static  String getViewDigitalStoreInfo () => '$viewDigitalStoreInfo';
 
   static const String viewPromoStoreInfo = '/view-promo';
-  static  String getViewDigitalStorePromo = '$viewPromoStoreInfo';
+  static  String getViewDigitalStorePromo () => '$viewPromoStoreInfo';
 
   static const String productDetails = '/product-details';
-  static  String getProductDetailsRoute = '$productDetails';
+  static  String getProductDetailsRoute () => '$productDetails';
 
   // static String getProductDetailsRoute(ProductModel product) {
   //   // List<int> _encoded = utf8.encode(jsonEncode(product.toJson()));
@@ -102,7 +106,26 @@ class RouteHelper {
   //   return '$productDetails';
   // }
 
+  static const String campaignAddSocialMedia = '/campaign-add-social-media';
+  static  String getCampaignAddSocialMedia () => '$campaignAddSocialMedia';
+
+  static const String campaignPacket = '/campaign-add-social-media';
+  static  String getCampaignPacket () => '$campaignPacket';
+
+  static const String campaignPageScreen = '/campaign-add-social-media';
+  static  String getCampaignPageScreen () => '$campaignPageScreen';
+
+  static const String campaignProductScreen = '/campaign-add-social-media';
+  static  String getCampaignProductScreen () => '$campaignProductScreen';
+
   static List<GetPage> routes = [
+    //Campaign
+    GetPage(name: campaignPageScreen, page: ()=> CampaignPageScreen()),
+    GetPage(name: campaignProductScreen, page: ()=> CampaignProductScreen()),
+    GetPage(name: campaignPacket, page: ()=> CampaignPacketScreen()),
+    GetPage(name: campaignAddSocialMedia, page: ()=> CampaignAddSocialMediaScreen()),
+
+
     //Digital Store
     GetPage(name: digitalStore, page: ()=> DigitalStoreHomeScreen()),
     GetPage(name: viewDigitalStoreInfo, page: ()=> DigitalShopInfoScreen()),
@@ -122,7 +145,6 @@ class RouteHelper {
     //Transaction
     GetPage(name: storeOrders, page: () => TransactionFragment()),
     GetPage(name: createTransaction, page: () => CreateCashTransaction()),
-
 
     //  Other Menu Page
     GetPage(name: storeReport, page: () => ReportScreen()),
