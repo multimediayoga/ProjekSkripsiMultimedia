@@ -43,7 +43,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
         //     MaterialPageRoute(builder: (context) => LoginScreen()),
         //     (Route<dynamic> route) => false);
         // Get.offNamed(RouteHelper.login);
-        Get.to(() => DashboardScreen());
+        Get.offNamed(RouteHelper.dashboard);
       }
     });
   }

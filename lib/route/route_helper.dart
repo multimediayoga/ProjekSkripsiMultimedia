@@ -5,6 +5,7 @@ import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:kelolapps/data/model/productmodel/product_model.dart';
 import 'package:kelolapps/view/screens/CreateCashTransactionScreen.dart';
+import 'package:kelolapps/view/screens/DashboardScreen.dart';
 import 'package:kelolapps/view/screens/LoginScreens.dart';
 import 'package:kelolapps/view/screens/RegisterScreens.dart';
 import 'package:kelolapps/view/screens/StoreRegisterWalkthroughScreen.dart';
@@ -33,6 +34,9 @@ Map<String, WidgetBuilder> routes() {
 class RouteHelper {
   static const String initial = '/';
   static const String splash = '/splash';
+  static const String dashboard = '/dashboard';
+  static const String getDashboardRoute = '$dashboard';
+
   static const String onBoarding = '/on-boarding';
 
   static const String login = '/login';
@@ -113,7 +117,7 @@ class RouteHelper {
     GetPage(name: login, page: () => LoginScreen()),
     GetPage(name: signUp, page: () => RegisterScreen()),
     GetPage(name: storeRegister, page: () => StoreRegisterWalkthroughScreen()),
-
+    GetPage(name: dashboard, page: () => DashboardScreen()),
 
     //Transaction
     GetPage(name: storeOrders, page: () => TransactionFragment()),

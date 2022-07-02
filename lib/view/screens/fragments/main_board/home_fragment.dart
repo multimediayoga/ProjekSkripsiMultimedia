@@ -12,6 +12,8 @@ import 'package:kelolapps/utils/dimensions.dart';
 import 'package:kelolapps/view/screens/digital_shop/DigitalShopHomeScreen2.dart';
 import 'package:nb_utils/nb_utils.dart';
 
+import '../../../../config/kelolaku/constant.dart';
+
 class HomeFragment extends StatefulWidget {
   const HomeFragment({Key? key}) : super(key: key);
 
@@ -29,6 +31,70 @@ class _HomeFragmentState extends State<HomeFragment> {
 
     scaffoldKey = GlobalKey<ScaffoldState>();
     Future.delayed(const Duration(milliseconds: 1000), () {});
+
+    Widget goToSettingStore(){
+      return Container(
+        margin: EdgeInsets.only(bottom: spacing_standard),
+        padding: EdgeInsets.all(4),
+        decoration: boxDecoration(
+            bgColor: KelolakuGlobalColor.light70, showShadow: true,
+          radius: 10,
+        ),
+        child: Row(
+          children: <Widget>[
+            Image.asset(
+                KelolaImage.kelolaStoreSettingJoin,
+                width: 50,
+                height: 50,
+                color: KelolakuGlobalColor.orange
+              // t12_colors[index % t12_colors.length],
+            ).paddingRight(spacing_standard_new),
+            Expanded(
+              child: Text("Pengaturan Toko", style: heading3.copyWith(
+                color: KelolakuGlobalColor.dark
+              ),),
+            ),
+            const Icon(
+              Icons.keyboard_arrow_right,
+              size: 20,
+              color: KelolakuGlobalColor.dark,
+            )
+          ],
+        ).paddingAll(spacing_middle),
+      );
+    }
+
+    Widget goToCampaign(){
+      return Container(
+        margin: EdgeInsets.only(bottom: spacing_standard),
+        padding: EdgeInsets.all(4),
+        decoration: boxDecoration(
+          bgColor: KelolakuGlobalColor.light70, showShadow: true,
+          radius: 10,
+        ),
+        child: Row(
+          children: <Widget>[
+            Image.asset(
+                KelolaImage.kelolaCampaign,
+                width: 50,
+                height: 50,
+                color: KelolakuGlobalColor.orange
+              // t12_colors[index % t12_colors.length],
+            ).paddingRight(spacing_standard_new),
+            Expanded(
+              child: Text("Lakukan Kampanye", style: heading3.copyWith(
+                  color: KelolakuGlobalColor.dark
+              ),),
+            ),
+            const Icon(
+              Icons.keyboard_arrow_right,
+              size: 20,
+              color: KelolakuGlobalColor.dark,
+            )
+          ],
+        ).paddingAll(spacing_middle),
+      );
+    }
 
     return Scaffold(
       body: SafeArea(
@@ -405,10 +471,14 @@ class _HomeFragmentState extends State<HomeFragment> {
                                 style: textRegular16.copyWith(
                                     color: KelolakuGlobalColor.dark),
                               ),
-                            )
+                            ),
                           ],
                         ),
-                      )
+                      ),
+                      32.height,
+                      goToSettingStore(),
+                      8.height,
+                      goToCampaign()
                     ],
                   ),
                 ),

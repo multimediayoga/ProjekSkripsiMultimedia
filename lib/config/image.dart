@@ -8,6 +8,8 @@ class KelolaImage{
   static const String kelolaLogoShort = '${KELOLAPPS_IMAGES_URL}/Logo-Icon.png';
   static const String kelolaLogoLong = '${KELOLAPPS_IMAGES_URL}/Logo-Long.png';
   static const String kelolaLetsJoin = '${KELOLAPPS_IMAGES_URL}/Lets-image.png';
+  static const String kelolaStoreSettingJoin = '${KELOLAPPS_IMAGES_URL}/shopping-store.png';
+  static const String kelolaCampaign = '${PROMO_IMAGES_URL}/toooa.png';
 
   static const String uploadStoreImageBox = '${STORE_IMAGES_URL}/Box-image.png';
   static const String uploadStoreImageCircle = '$STORE_IMAGES_URL/Circle-Image.png';
