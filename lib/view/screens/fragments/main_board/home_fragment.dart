@@ -28,31 +28,30 @@ class _HomeFragmentState extends State<HomeFragment> {
 
   @override
   Widget build(BuildContext context) {
-
     scaffoldKey = GlobalKey<ScaffoldState>();
     Future.delayed(const Duration(milliseconds: 1000), () {});
 
-    Widget goToSettingStore(){
+    Widget goToSettingStore() {
       return Container(
         margin: EdgeInsets.only(bottom: spacing_standard),
         padding: EdgeInsets.all(4),
         decoration: boxDecoration(
-            bgColor: KelolakuGlobalColor.light70, showShadow: true,
+          bgColor: KelolakuGlobalColor.light70,
+          showShadow: true,
           radius: 10,
         ),
         child: Row(
           children: <Widget>[
-            Image.asset(
-                KelolaImage.kelolaStoreSettingJoin,
-                width: 50,
-                height: 50,
-                color: KelolakuGlobalColor.orange
-              // t12_colors[index % t12_colors.length],
-            ).paddingRight(spacing_standard_new),
+            Image.asset(KelolaImage.kelolaStoreSettingJoin,
+                    width: 50, height: 50, color: KelolakuGlobalColor.orange
+                    // t12_colors[index % t12_colors.length],
+                    )
+                .paddingRight(spacing_standard_new),
             Expanded(
-              child: Text("Pengaturan Toko", style: heading3.copyWith(
-                color: KelolakuGlobalColor.dark
-              ),),
+              child: Text(
+                "Pengaturan Toko",
+                style: heading3.copyWith(color: KelolakuGlobalColor.dark),
+              ),
             ),
             const Icon(
               Icons.keyboard_arrow_right,
@@ -64,27 +63,27 @@ class _HomeFragmentState extends State<HomeFragment> {
       );
     }
 
-    Widget goToCampaign(){
+    Widget goToCampaign() {
       return Container(
         margin: EdgeInsets.only(bottom: spacing_standard),
         padding: EdgeInsets.all(4),
         decoration: boxDecoration(
-          bgColor: KelolakuGlobalColor.light70, showShadow: true,
+          bgColor: KelolakuGlobalColor.light70,
+          showShadow: true,
           radius: 10,
         ),
         child: Row(
           children: <Widget>[
-            Image.asset(
-                KelolaImage.kelolaCampaign,
-                width: 50,
-                height: 50,
-                color: KelolakuGlobalColor.orange
-              // t12_colors[index % t12_colors.length],
-            ).paddingRight(spacing_standard_new),
+            Image.asset(KelolaImage.kelolaCampaign,
+                    width: 50, height: 50, color: KelolakuGlobalColor.orange
+                    // t12_colors[index % t12_colors.length],
+                    )
+                .paddingRight(spacing_standard_new),
             Expanded(
-              child: Text("Lakukan Kampanye", style: heading3.copyWith(
-                  color: KelolakuGlobalColor.dark
-              ),),
+              child: Text(
+                "Lakukan Kampanye",
+                style: heading3.copyWith(color: KelolakuGlobalColor.dark),
+              ),
             ),
             const Icon(
               Icons.keyboard_arrow_right,
@@ -93,7 +92,9 @@ class _HomeFragmentState extends State<HomeFragment> {
             )
           ],
         ).paddingAll(spacing_middle),
-      );
+      ).onTap((){
+        Get.toNamed(RouteHelper.campaign);
+      });
     }
 
     return Scaffold(
@@ -410,7 +411,7 @@ class _HomeFragmentState extends State<HomeFragment> {
                       8.height,
                       Container(
                         // height: 250,
-                            // MediaQuery.of(context).size.height * 0.14408866995,
+                        // MediaQuery.of(context).size.height * 0.14408866995,
                         width: context.width(),
                         padding: const EdgeInsets.fromLTRB(4, 4, 4, 4),
                         decoration: boxDecorationWithRoundedCorners(

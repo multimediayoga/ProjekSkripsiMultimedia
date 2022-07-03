@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/route_manager.dart';
 import 'package:kelolapps/config/image.dart';
 import 'package:kelolapps/config/kelolaku/color_style.dart';
 import 'package:kelolapps/config/kelolaku/text_style.dart';
+import 'package:kelolapps/route/route_helper.dart';
 import 'package:kelolapps/utils/dimensions.dart';
 import 'package:kelolapps/utils/fluk/AppTheme.dart';
 import 'package:nb_utils/nb_utils.dart';
@@ -91,7 +93,9 @@ class _StoreCampaignScreenState extends State<StoreCampaignScreen> {
                               ],
                             ),
                           ),
-                        ),
+                        ).onTap((){
+                          Get.toNamed(RouteHelper.campaignPageScreen);
+                        }),
                         4.height,
                         Container(
                           padding: EdgeInsets.all(16),
@@ -113,7 +117,9 @@ class _StoreCampaignScreenState extends State<StoreCampaignScreen> {
                               Text("Kampanyekan Produk", style: heading2.copyWith(color: KelolakuGlobalColor.dark60),),
                             ],
                           ),
-                        )
+                        ).onTap((){
+                          Get.toNamed(RouteHelper.campaignProductScreen);
+                        })
                       ],
                     ),
                     4.width,
@@ -139,7 +145,9 @@ class _StoreCampaignScreenState extends State<StoreCampaignScreen> {
                               Text("Tambahkan Sosial Media", style: heading2.copyWith(color: KelolakuGlobalColor.dark60),).paddingAll(8),
                             ],
                           ),
-                        ),
+                        ).onTap((){
+                          Get.toNamed(RouteHelper.getCampaignSocialMediaScreen());
+                        }),
                         4.height,
                         Container(
                           padding: EdgeInsets.all(16),
@@ -162,7 +170,9 @@ class _StoreCampaignScreenState extends State<StoreCampaignScreen> {
                               Text("Kampanyekan Promo", style: heading2.copyWith(color: KelolakuGlobalColor.light70),).paddingAll(8),
                             ],
                           ),
-                        )
+                        ).onTap((){
+                          Get.toNamed(RouteHelper.campaignPacket);
+                        })
                       ],
                     ),
                   ],

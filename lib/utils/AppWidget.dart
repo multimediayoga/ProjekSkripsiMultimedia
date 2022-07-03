@@ -496,3 +496,30 @@ CachedNetworkImage buildCacheNetworkImage({double? width, double? height, url, p
     );
   }
 }
+
+
+Padding editTextStyle(var hintText, {var line = 1, Color? fillColored, required Color enabledColor, required Color focusedColor}) {
+  return Padding(
+      padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+      child: TextFormField(
+        maxLines: line,
+        style: TextStyle(
+          fontSize: textSizeMedium,
+          fontFamily: fontRegular,
+        ),
+        decoration: InputDecoration(
+          contentPadding: EdgeInsets.fromLTRB(spacing_standard_new, 16, 4, 16),
+          hintText: hintText,
+          filled: true,
+          fillColor: fillColored,
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(spacing_middle),
+            borderSide: BorderSide(color: enabledColor, width: 0.0),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(spacing_middle),
+            borderSide: BorderSide(color: focusedColor, width: 0.0),
+          ),
+        ),
+      ));
+}

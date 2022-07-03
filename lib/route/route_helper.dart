@@ -106,25 +106,24 @@ class RouteHelper {
   //   return '$productDetails';
   // }
 
-  static const String campaignAddSocialMedia = '/campaign-add-social-media';
-  static  String getCampaignAddSocialMedia () => '$campaignAddSocialMedia';
-
-  static const String campaignPacket = '/campaign-add-social-media';
+  static const String campaignPacket = '/campaign-packet';
   static  String getCampaignPacket () => '$campaignPacket';
 
-  static const String campaignPageScreen = '/campaign-add-social-media';
+  static const String campaignPageScreen = '/campaign-page';
   static  String getCampaignPageScreen () => '$campaignPageScreen';
 
-  static const String campaignProductScreen = '/campaign-add-social-media';
+  static const String campaignProductScreen = '/campaign-product';
   static  String getCampaignProductScreen () => '$campaignProductScreen';
+
+  static const String campaignSocialMediaScreen = '/campaign-social-media';
+  static  String getCampaignSocialMediaScreen () => '$campaignSocialMediaScreen';
 
   static List<GetPage> routes = [
     //Campaign
     GetPage(name: campaignPageScreen, page: ()=> CampaignPageScreen()),
     GetPage(name: campaignProductScreen, page: ()=> CampaignProductScreen()),
     GetPage(name: campaignPacket, page: ()=> CampaignPacketScreen()),
-    GetPage(name: campaignAddSocialMedia, page: ()=> CampaignAddSocialMediaScreen()),
-
+    GetPage(name: campaignSocialMediaScreen, page: ()=> CampaignAddSocialMediaScreen()),
 
     //Digital Store
     GetPage(name: digitalStore, page: ()=> DigitalStoreHomeScreen()),

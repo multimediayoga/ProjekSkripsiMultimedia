@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:badges/badges.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
@@ -174,6 +172,25 @@ class GlobalFunction {
           );
         });
   }
+
+  static AppBar kelolakuAppbarMinimal(BuildContext context,
+      {required String pageName}) {
+    return AppBar(
+      elevation: 0,
+      centerTitle: true,
+      backgroundColor: KelolakuGlobalColor.light70,
+      automaticallyImplyLeading: false,
+      title: Text(pageName,
+          style: heading3.copyWith(color: KelolakuGlobalColor.dark)),
+      leading: InkWell(
+        onTap: () {
+          Navigator.pop(context);
+        },
+        child: const Icon(Icons.arrow_back_ios,
+            color: KelolakuGlobalColor.dark, size: 20),
+      ),
+    );
+  }
 }
 
 extension StringExtension on String? {
@@ -247,7 +264,8 @@ class GlobalStyle {
       SystemUiOverlayStyle.dark;
   static const Color appBarBackgroundColor = Colors.white;
   static const TextStyle appBarTitle =
-  TextStyle(fontSize: 18, color: Colors.black);
+      TextStyle(fontSize: 18, color: Colors.black);
+
   /*
   this is used for height at product card using gridDelegate
   if you change font size or using custom font such as google font, sometimes there is an error said
@@ -256,31 +274,34 @@ class GlobalStyle {
   */
   static const double gridDelegateRatio = 0.625; // lower is more longer
   static const double gridDelegateFlashsaleRatio =
-  0.597; // lower is more longer
+      0.597; // lower is more longer
   static const double horizontalProductHeightMultiplication =
-  1.90; // higher is more longer
+      1.90; // higher is more longer
 }
 
-Widget createCoupon(BuildContext context, String couponRoute, {String? textFill, Color? bgColor} ){
+Widget createCoupon(BuildContext context, String couponRoute,
+    {String? textFill, Color? bgColor}) {
   return GestureDetector(
     behavior: HitTestBehavior.translucent,
-    onTap: (){
-        Get.toNamed(couponRoute);
+    onTap: () {
+      Get.toNamed(couponRoute);
     },
     child: Container(
       padding: EdgeInsets.all(12),
       margin: EdgeInsets.all(16.0),
       decoration: BoxDecoration(
           color: bgColor ?? KelolakuGlobalColor.colorPrimaryExtra,
-          borderRadius: BorderRadius.circular(5)
-      ),
+          borderRadius: BorderRadius.circular(5)),
       child: Row(
         children: [
           Expanded(
             child: Container(
               child: Text(
                 textFill ?? 'Ada Promo untuk Kamu',
-                style: TextStyle(fontSize: 14, color: Color(0xffffffff), fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    fontSize: 14,
+                    color: Color(0xffffffff),
+                    fontWeight: FontWeight.bold),
               ),
             ),
           ),
@@ -291,14 +312,14 @@ Widget createCoupon(BuildContext context, String couponRoute, {String? textFill,
   );
 }
 
-Widget divider1(){
+Widget divider1() {
   return Container(
     height: 8,
     color: Colors.grey[100],
   );
 }
 
-Widget divider2(){
+Widget divider2() {
   return Container(
     margin: EdgeInsets.symmetric(horizontal: 16),
     child: Divider(
@@ -308,9 +329,40 @@ Widget divider2(){
   );
 }
 
-Widget divider3(){
+Widget divider3() {
   return Divider(
     height: 32,
     color: Colors.grey[400],
+  );
+}
+
+Widget DropdownChoiceContainer(
+    {required String degreeValue,
+    required List<String> itemsData,
+    required Function(String? newValue) changeValue}) {
+  return Container(
+    decoration: boxDecorationWithRoundedCorners(
+      border: Border.all(color: gray.withOpacity(0.4)),
+      backgroundColor: white,
+    ),
+    padding: EdgeInsets.symmetric(horizontal: 8),
+    child: DropdownButton(
+      isExpanded: true,
+      underline: Container(color: Colors.transparent),
+      value: degreeValue,
+      icon: Icon(Icons.keyboard_arrow_down),
+      items: itemsData.map((String items) {
+        return DropdownMenuItem(
+          value: items,
+          child: Text(items),
+        );
+      }).toList(),
+      onChanged: changeValue,
+      // onChanged: (String? newValue) {
+      //   setState(() {
+      //     degreeValue = newValue!;
+      //   });
+      // },
+    ),
   );
 }
