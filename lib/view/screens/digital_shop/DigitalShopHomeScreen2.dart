@@ -218,7 +218,7 @@ class _DigitalStoreHomeScreenState extends State<DigitalStoreHomeScreen> {
                     // SizedBox(
                     //   height: Dimensions.VERTICAL_SIZE_16,
                     // ),
-                    createCoupon(context, RouteHelper.getViewDigitalStorePromo,
+                    createCoupon(context, RouteHelper.getViewDigitalStorePromo(),
                         bgColor: DStoreGlobalColor.colorDigitalStore),
                     CustomScrollView(
                         shrinkWrap: true,
@@ -374,7 +374,7 @@ class _DigitalStoreHomeScreenState extends State<DigitalStoreHomeScreen> {
         child: GestureDetector(
           behavior: HitTestBehavior.translucent,
           onTap: () {
-            Get.toNamed(RouteHelper.getProductDetailsRoute,
+            Get.toNamed(RouteHelper.getProductDetailsRoute(),
               arguments: DigitalProductDetailScreen(productModel: recomendedProductData[index]),
             );
           },

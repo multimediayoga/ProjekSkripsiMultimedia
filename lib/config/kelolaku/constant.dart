@@ -4,6 +4,7 @@ const String PUBLIC_IMAGES_URL = 'assets/public_image';
 const String KELOLAPPS_IMAGES_URL = 'assets/kelolapps';
 const String STORE_IMAGES_URL = 'assets/store_image';
 const String PROMO_IMAGES_URL = 'assets/promo';
+const String EmployeeAsset = 'assets/employee';
 
 const String GLOBAL_URL = 'https://devkit.ijteknologi.com';
 

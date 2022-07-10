@@ -254,21 +254,21 @@ class _TransactionFragmentState extends State<TransactionFragment> {
             top: 8),
         child: Row(
           children: [
-            Expanded(
-              child: FxButton.outlined(
-                borderColor: KelolakuGlobalColor.colorPrimaryExtra,
-                borderRadiusAll: 4,
-                onPressed: () {
-                  Get.toNamed(RouteHelper.getCreateTransactionRoute());
-                },
-                child: Text(
-                  "Catat Keuangan",
-                  style: heading4.copyWith(
-                      color: KelolakuGlobalColor.colorPrimaryExtra),
-                ),
-              ),
-            ),
-            20.width,
+            // Expanded(
+            //   child: FxButton.outlined(
+            //     borderColor: KelolakuGlobalColor.colorPrimaryExtra,
+            //     borderRadiusAll: 4,
+            //     onPressed: () {
+            //       Get.toNamed(RouteHelper.getCreateTransactionRoute());
+            //     },
+            //     child: Text(
+            //       "Catat Keuangan",
+            //       style: heading4.copyWith(
+            //           color: KelolakuGlobalColor.colorPrimaryExtra),
+            //     ),
+            //   ),
+            // ),
+            // 20.width,
             Expanded(
               child: FxButton.small(
                 padding: FxSpacing.all(16),
@@ -276,7 +276,7 @@ class _TransactionFragmentState extends State<TransactionFragment> {
                 onPressed: () {},
                 elevation: 0,
                 child: Text(
-                  "Buat Pesanan Baru",
+                  "Buat Kas Baru",
                   style: heading4.copyWith(color: KelolakuGlobalColor.light70),
                 ),
               ),

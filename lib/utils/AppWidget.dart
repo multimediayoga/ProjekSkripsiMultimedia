@@ -281,7 +281,7 @@ AppBar appBar(BuildContext context, String title, {List<Widget>? actions, bool s
 
 Widget? Function(BuildContext, String) placeholderWidgetFn() => (_, s) => placeholderWidget();
 
-Widget placeholderWidget() => Image.asset('images/app/placeholder.jpg', fit: BoxFit.cover);
+Widget placeholderWidget() => Image.asset('$PUBLIC_IMAGES_URL/placeholder.jpg', fit: BoxFit.cover);
 
 String parseHtmlString(String? htmlString) {
   return parse(parse(htmlString).body!.text).documentElement!.text;
@@ -495,4 +495,31 @@ CachedNetworkImage buildCacheNetworkImage({double? width, double? height, url, p
       color: imageColor==null?null:imageColor,
     );
   }
+}
+
+
+Padding editTextStyle(var hintText, {var line = 1, Color? fillColored, required Color enabledColor, required Color focusedColor}) {
+  return Padding(
+      padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+      child: TextFormField(
+        maxLines: line,
+        style: TextStyle(
+          fontSize: textSizeMedium,
+          fontFamily: fontRegular,
+        ),
+        decoration: InputDecoration(
+          contentPadding: EdgeInsets.fromLTRB(spacing_standard_new, 16, 4, 16),
+          hintText: hintText,
+          filled: true,
+          fillColor: fillColored,
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(spacing_middle),
+            borderSide: BorderSide(color: enabledColor, width: 0.0),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(spacing_middle),
+            borderSide: BorderSide(color: focusedColor, width: 0.0),
+          ),
+        ),
+      ));
 }
