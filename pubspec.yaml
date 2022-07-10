@@ -84,6 +84,8 @@ flutter:
     - assets/promo/
     - assets/report/
     - assets/employee/
+    - assets/chat/
+    - assets/profile/
 
     # Heading Fonts
     - assets/fonts/inter/

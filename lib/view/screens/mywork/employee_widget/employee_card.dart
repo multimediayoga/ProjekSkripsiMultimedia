@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:kelolapps/config/image.dart';
 import 'package:kelolapps/config/kelolaku/color_style.dart';
 import 'package:kelolapps/config/kelolaku/text_style.dart';
 import 'package:kelolapps/view/screens/mywork/model/EmployeeRepo.dart';
