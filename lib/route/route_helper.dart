@@ -66,7 +66,7 @@ class RouteHelper {
   static const String course = '/course';
   static const String storePromo = '/promo';
   static const String storeSetting = '/store-setting';
-  static const String storeEmployee = '/store-employee';
+  static const String storeEmployee = '/store-employee_widget';
   static const String campaign = '/campaign';
   static const String account = '/my-account';
 

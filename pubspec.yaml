@@ -83,6 +83,7 @@ flutter:
     - assets/store_image/
     - assets/promo/
     - assets/report/
+    - assets/employee/
 
     # Heading Fonts
     - assets/fonts/inter/
