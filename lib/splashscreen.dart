@@ -14,6 +14,7 @@ import 'package:kelolapps/view/screens/LoginScreens.dart';
 import 'package:kelolapps/view/screens/digital_shop/DigitalShopHomeScreen2.dart';
 import 'package:kelolapps/view/screens/fragments/store_register/signup_store_info_fragment.dart';
 import 'package:kelolapps/view/screens/other_menu/PromoScreen.dart';
+import 'package:kelolapps/view/screens/whatsapp/WhatsappSample.dart';
 import 'package:kelolapps/view/test/learndir.dart';
 
 class SplashScreenPage extends StatefulWidget {
@@ -43,7 +44,8 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
         //     MaterialPageRoute(builder: (context) => LoginScreen()),
         //     (Route<dynamic> route) => false);
         // Get.offNamed(RouteHelper.login);
-        Get.offNamed(RouteHelper.dashboard);
+        // Get.offNamed(RouteHelper.dashboard);
+        Get.offAll(()=>ChatWhatsAppPage());
       }
     });
   }
