@@ -12,8 +12,10 @@ class _PromoPaketBundleScreenState extends State<PromoPaketBundleScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: GlobalFunction.kelolakuAppbarMinimal(context, pageName: "Promosi Kupon"),
-      
+      appBar: GlobalFunction.kelolakuAppbarMinimal(context, pageName: "Produk Paket Toko"),
+      body: Container(
+
+      ),
     );
   }
 }

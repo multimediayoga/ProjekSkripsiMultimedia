@@ -129,8 +129,8 @@ class RouteHelper {
 
   static List<GetPage> routes = [
     //Create Promo
-    GetPage(name: storePaketBundlePage, page: ()=>StoreCouponScreen()),
-    GetPage(name: storeCouponsPage, page: ()=> PromoPaketBundleScreen()),
+    GetPage(name: storePaketBundlePage, page: ()=>PromoPaketBundleScreen()),
+    GetPage(name: storeCouponsPage, page: ()=> StoreCouponScreen()),
 
     //Campaign
     GetPage(name: campaignPageScreen, page: ()=> CampaignPageScreen()),
