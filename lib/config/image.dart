@@ -39,6 +39,7 @@ class KelolaImage{
   static const campaignBoxed = "${PROMO_IMAGES_URL}/boxed.png";
   static const campaignBundle = "${PROMO_IMAGES_URL}/vybund.png";
   static const campaignHandToko = "${PROMO_IMAGES_URL}/HandToko.svg";
+  static const campaignBundleFront = "${PROMO_IMAGES_URL}/aaa.png";
 
   // static const whatsappBackground = "${CHAT_ASSET}/whatsapp-bg.jpg";
   // static const whatsappVideoBG1 = "$CHAT_ASSET/video-bg-1.jpg";
@@ -60,7 +61,8 @@ class KelolaImage{
     '$PROMO_IMAGES_URL/4.png',
   ];
 
-
+  // static const promoPaketImage = '$PROMO_IMAGES_URL/promo-paket.png';
+  // static const buatKuponImage = '$PROMO_IMAGES_URL/buat-kupon.png';
 
   // void imageList(){
   //   for(int i=0; i<14; i++){

@@ -45,7 +45,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
         //     (Route<dynamic> route) => false);
         // Get.offNamed(RouteHelper.login);
         // Get.offNamed(RouteHelper.dashboard);
-        Get.offAll(()=>ChatWhatsAppPage());
+        Get.offAll(()=>PromoScreen());
       }
     });
   }

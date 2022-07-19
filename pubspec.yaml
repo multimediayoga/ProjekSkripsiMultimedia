@@ -135,26 +135,3 @@ flutter:
           weight: 600
         - asset: assets/fonts/manrope/Manrope-Bold.ttf
           weight: 700
-  #
-  # For details regarding fontss from package dependencies,
-  # see https://flutter.dev/custom-fonts/#from-packages
-#     fonts:
-#       -family: Inter
-#        fonts:
-
-#     -  family: manrope
-##        fonts:
-#         - asset: assets/fonts/Manrope-Regular.otf
-#         - asset: assets/font/Manrope-Light.ttf
-#           weight: 100
-#         - asset: assets/font/Manrope-ExtraLight.ttf
-#             weight: 200
-#         - asset: assets/font/Manrope-Light.ttf
-#           weight: 300
-#         - asset: assets/font/Manrope-Medium.ttf
-#           weight: 500
-#         - asset: assets/font/Manrope-Semibold.ttf
-#           weight: 600
-#         #          style: italic
-#         - asset: assets/font/Manrope-Bold.ttf
-#           weight: 700

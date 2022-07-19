@@ -18,6 +18,8 @@ import 'package:kelolapps/view/screens/mywork/campaign/CampaignAddSocialMediaScr
 import 'package:kelolapps/view/screens/mywork/campaign/CampaignPacketScreen.dart';
 import 'package:kelolapps/view/screens/mywork/campaign/CampaignPageScreen.dart';
 import 'package:kelolapps/view/screens/mywork/campaign/CampaignProductScreen.dart';
+import 'package:kelolapps/view/screens/mywork/promotion/StoreCouponScreen.dart';
+import 'package:kelolapps/view/screens/mywork/promotion/StorePaketBundleScreen.dart';
 import 'package:kelolapps/view/screens/other_menu/AccountScreen.dart';
 import 'package:kelolapps/view/screens/other_menu/CourseScreen.dart';
 import 'package:kelolapps/view/screens/other_menu/MembershipScreen.dart';
@@ -118,7 +120,18 @@ class RouteHelper {
   static const String campaignSocialMediaScreen = '/campaign-social-media';
   static  String getCampaignSocialMediaScreen () => '$campaignSocialMediaScreen';
 
+  //Create Promo
+  static const String storeCouponsPage = '/store-coupons';
+  static  String getStoreCouponsPage () => '$storeCouponsPage';
+
+  static const String storePaketBundlePage = '/store-paket-bundle';
+  static  String getStorePaketBundlePage () => '$storePaketBundlePage';
+
   static List<GetPage> routes = [
+    //Create Promo
+    GetPage(name: storePaketBundlePage, page: ()=>StoreCouponScreen()),
+    GetPage(name: storeCouponsPage, page: ()=> PromoPaketBundleScreen()),
+
     //Campaign
     GetPage(name: campaignPageScreen, page: ()=> CampaignPageScreen()),
     GetPage(name: campaignProductScreen, page: ()=> CampaignProductScreen()),
