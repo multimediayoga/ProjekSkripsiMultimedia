@@ -1,4 +1,5 @@
-import '../../../../config/kelolaku/constant.dart';
+
+import 'package:kelolapps/config/kelolaku/constant.dart';
 
 const BaseUrl = 'https://assets.iqonic.design/old-themeforest-images/prokit';
 
@@ -36,7 +37,7 @@ const quiz_ic_list4 = "$EmployeeAsset/quiz_ic_list4.png";
 const quiz_ic_list5 = "$EmployeeAsset/quiz_ic_list5.png";
 const user_my_role = "$EmployeeAsset/quiz_ic_list5.png";
 
-class NewQuizModel {
+class EmployeeModel {
   var ownerName = "";
   var phoneNumber = "";
   var ownerProfile = "";
@@ -79,8 +80,8 @@ class QuizContactUsModel {
   var subtitle = "";
 }
 
-NewQuizModel geMytUserData(){
-  var userData = NewQuizModel();
+EmployeeModel geMytUserData(){
+  var userData = EmployeeModel();
   userData.ownerName = "Ardian Kolbu (Saya)";
   userData.phoneNumber = "081930128103";
   userData.ownerProfile = user_my_role;
@@ -89,25 +90,25 @@ NewQuizModel geMytUserData(){
   return userData;
 }
 
-List<NewQuizModel> getQuizData() {
-  List<NewQuizModel> list = [];
-  NewQuizModel model1 = NewQuizModel();
+List<EmployeeModel> getQuizData() {
+  List<EmployeeModel> list = [];
+  EmployeeModel model1 = EmployeeModel();
   model1.ownerName = "Raden Roma";
   model1.phoneNumber = "081210003";
   model1.ownerProfile = quiz_ic_course1;
   model1.roleStatus = [ShopRole.Manager.name!, ShopRole.Marketing.name!];
 
-  NewQuizModel model2 = NewQuizModel();
+  EmployeeModel model2 = EmployeeModel();
   model2.ownerName = "Ray Make";
   model2.phoneNumber = "081250003";
   model2.ownerProfile = quiz_ic_course2;
 
-  NewQuizModel model3 = NewQuizModel();
+  EmployeeModel model3 = EmployeeModel();
   model3.ownerName = "Susan Pizzaro";
   model3.phoneNumber = "102552092";
   model3.ownerProfile = quiz_ic_course3;
 
-  NewQuizModel model4 = NewQuizModel();
+  EmployeeModel model4 = EmployeeModel();
   model4.ownerName = "Barron";
   model4.phoneNumber = "879500192";
   model4.ownerProfile = quiz_ic_course1;

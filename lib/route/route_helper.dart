@@ -18,6 +18,7 @@ import 'package:kelolapps/view/screens/mywork/campaign/CampaignAddSocialMediaScr
 import 'package:kelolapps/view/screens/mywork/campaign/CampaignPacketScreen.dart';
 import 'package:kelolapps/view/screens/mywork/campaign/CampaignPageScreen.dart';
 import 'package:kelolapps/view/screens/mywork/campaign/CampaignProductScreen.dart';
+import 'package:kelolapps/view/screens/mywork/promotion/CreatePaketBundleScreen.dart';
 import 'package:kelolapps/view/screens/mywork/promotion/StoreCouponScreen.dart';
 import 'package:kelolapps/view/screens/mywork/promotion/StorePaketBundleScreen.dart';
 import 'package:kelolapps/view/screens/other_menu/AccountScreen.dart';
@@ -30,6 +31,7 @@ import 'package:kelolapps/view/screens/other_menu/StoreEmployeeScreen.dart';
 import 'package:kelolapps/view/screens/other_menu/StoreSettingScreen.dart';
 
 import '../splashscreen.dart';
+import '../view/screens/mywork/promotion/CreateCouponScreen.dart';
 
 Map<String, WidgetBuilder> routes() {
   return <String, WidgetBuilder>{
@@ -68,7 +70,7 @@ class RouteHelper {
   static const String course = '/course';
   static const String storePromo = '/promo';
   static const String storeSetting = '/store-setting';
-  static const String storeEmployee = '/store-employee_widget';
+  static const String storeEmployee = '/store-employee';
   static const String campaign = '/campaign';
   static const String account = '/my-account';
 
@@ -127,10 +129,20 @@ class RouteHelper {
   static const String storePaketBundlePage = '/store-paket-bundle';
   static  String getStorePaketBundlePage () => '$storePaketBundlePage';
 
+  static const String createPaketBundlePage = '/create-paket-bundle';
+  static  String getCreatePaketBundlePage () => '$createPaketBundlePage';
+
+  static const String createStoreCouponPage = '/create-store-coupon';
+  static  String getCreateStoreCouponPage () => '$createStoreCouponPage';
+
+
+
   static List<GetPage> routes = [
     //Create Promo
     GetPage(name: storePaketBundlePage, page: ()=>PromoPaketBundleScreen()),
     GetPage(name: storeCouponsPage, page: ()=> StoreCouponScreen()),
+    GetPage(name: createStoreCouponPage, page: ()=> CreateCouponScreen()),
+    GetPage(name: createPaketBundlePage, page: ()=> CreatePaketBundle()),
 
     //Campaign
     GetPage(name: campaignPageScreen, page: ()=> CampaignPageScreen()),

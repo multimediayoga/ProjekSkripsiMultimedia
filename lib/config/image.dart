@@ -41,6 +41,9 @@ class KelolaImage{
   static const campaignHandToko = "${PROMO_IMAGES_URL}/HandToko.svg";
   static const campaignBundleFront = "${PROMO_IMAGES_URL}/aaa.png";
 
+  static const couponsIcon = '$PROMO_IMAGES_URL/ddd.png';
+  static const rpIcon = '$PROMO_IMAGES_URL/rp2.png';
+
   // static const whatsappBackground = "${CHAT_ASSET}/whatsapp-bg.jpg";
   // static const whatsappVideoBG1 = "$CHAT_ASSET/video-bg-1.jpg";
   // static const whatsappVideoBG2 = "$CHAT_ASSET/video-bg-2.jpg";

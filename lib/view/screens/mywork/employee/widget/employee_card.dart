@@ -2,13 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:kelolapps/config/kelolaku/color_style.dart';
 import 'package:kelolapps/config/kelolaku/text_style.dart';
-import 'package:kelolapps/view/screens/mywork/model/EmployeeRepo.dart';
+import 'package:kelolapps/utils/AppWidget.dart';
+import 'package:kelolapps/view/screens/mywork/employee/model/EmployeeRepo.dart';
 import 'package:nb_utils/nb_utils.dart';
 
-import '../../../../utils/AppWidget.dart';
 
 class EmployeeCard extends StatefulWidget {
-  final NewQuizModel model;
+  final EmployeeModel model;
   const EmployeeCard({Key? key, required this.model}) : super(key: key);
 
   @override
