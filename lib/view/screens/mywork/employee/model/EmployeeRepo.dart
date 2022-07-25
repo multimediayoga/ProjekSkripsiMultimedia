@@ -15,27 +15,27 @@ const quiz_ic_marketing = "$BaseUrl/images/quiz/quiz_ic_marketing.png";
 const quiz_ic_notification = "$BaseUrl/images/quiz/quiz_ic_notification.png";
 const quiz_ic_study1 = "$BaseUrl/images/quiz/quiz_ic_study1.png";
 const quiz_ic_study2 = "$BaseUrl/images/quiz/quiz_ic_study2.png";
-const quiz_ic_quiz1 = "$EmployeeAsset/quiz_ic_quiz1.png";
-const quiz_ic_quiz2 = "$EmployeeAsset/quiz_ic_quiz2.png";
-const quiz_ic_quiz = "$EmployeeAsset/quiz_ic_quiz.svg";
-const quiz_ic_homes = "$EmployeeAsset/quiz_ic_home.svg";
-const quiz_ic_user = "$EmployeeAsset/quiz_ic_user.svg";
-const quiz_ic_facebook = "$EmployeeAsset/quiz_ic_facebook.svg";
-const quiz_ic_google = "$EmployeeAsset/quiz_ic_google.svg";
-const quiz_ic_mail = "$EmployeeAsset/quiz_ic_mail.svg";
-const quiz_ic_twitter = "$EmployeeAsset/quiz_ic_twitter.svg";
+const quiz_ic_quiz1 = "$EMPLOYEE_IMAGE_URL/quiz_ic_quiz1.png";
+const quiz_ic_quiz2 = "$EMPLOYEE_IMAGE_URL/quiz_ic_quiz2.png";
+const quiz_ic_quiz = "$EMPLOYEE_IMAGE_URL/quiz_ic_quiz.svg";
+const quiz_ic_homes = "$EMPLOYEE_IMAGE_URL/quiz_ic_home.svg";
+const quiz_ic_user = "$EMPLOYEE_IMAGE_URL/quiz_ic_user.svg";
+const quiz_ic_facebook = "$EMPLOYEE_IMAGE_URL/quiz_ic_facebook.svg";
+const quiz_ic_google = "$EMPLOYEE_IMAGE_URL/quiz_ic_google.svg";
+const quiz_ic_mail = "$EMPLOYEE_IMAGE_URL/quiz_ic_mail.svg";
+const quiz_ic_twitter = "$EMPLOYEE_IMAGE_URL/quiz_ic_twitter.svg";
 
-const Quiz_ic_Grid = "$EmployeeAsset/quiz_ic_grid.png";
-const Quiz_ic_List = "$EmployeeAsset/quiz_ic_list.png";
+const Quiz_ic_Grid = "$EMPLOYEE_IMAGE_URL/quiz_ic_grid.png";
+const Quiz_ic_List = "$EMPLOYEE_IMAGE_URL/quiz_ic_list.png";
 const quiz_img_People1 = "$BaseUrl/images/quiz/quiz_img_People1.jpg";
 const quiz_img_People2 = "$BaseUrl/images/quiz/quiz_img_People2.png";
 
-const quiz_ic_list1 = "$EmployeeAsset/quiz_ic_list1.png";
-const quiz_ic_list2 = "$EmployeeAsset/quiz_ic_list2.png";
-const quiz_ic_list3 = "$EmployeeAsset/quiz_ic_list3.png";
-const quiz_ic_list4 = "$EmployeeAsset/quiz_ic_list4.png";
-const quiz_ic_list5 = "$EmployeeAsset/quiz_ic_list5.png";
-const user_my_role = "$EmployeeAsset/quiz_ic_list5.png";
+const quiz_ic_list1 = "$EMPLOYEE_IMAGE_URL/quiz_ic_list1.png";
+const quiz_ic_list2 = "$EMPLOYEE_IMAGE_URL/quiz_ic_list2.png";
+const quiz_ic_list3 = "$EMPLOYEE_IMAGE_URL/quiz_ic_list3.png";
+const quiz_ic_list4 = "$EMPLOYEE_IMAGE_URL/quiz_ic_list4.png";
+const quiz_ic_list5 = "$EMPLOYEE_IMAGE_URL/quiz_ic_list5.png";
+const user_my_role = "$EMPLOYEE_IMAGE_URL/quiz_ic_list5.png";
 
 class EmployeeModel {
   var ownerName = "";

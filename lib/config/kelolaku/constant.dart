@@ -4,7 +4,8 @@ const String PUBLIC_IMAGES_URL = 'assets/public_image';
 const String KELOLAPPS_IMAGES_URL = 'assets/kelolapps';
 const String STORE_IMAGES_URL = 'assets/store_image';
 const String PROMO_IMAGES_URL = 'assets/promo';
-const String EmployeeAsset = 'assets/employee';
+const String EMPLOYEE_IMAGE_URL = 'assets/employee';
+const String PRODUCT_IMAGE_URL = 'assets/product';
 // const String CHAT_ASSET = 'assets/chat';
 // const String PROFILE_ASSET = 'assets/profile';
 

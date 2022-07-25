@@ -64,6 +64,7 @@ class KelolaImage{
     '$PROMO_IMAGES_URL/4.png',
   ];
 
+
   // static const promoPaketImage = '$PROMO_IMAGES_URL/promo-paket.png';
   // static const buatKuponImage = '$PROMO_IMAGES_URL/buat-kupon.png';
 

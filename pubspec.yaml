@@ -92,6 +92,7 @@ flutter:
     - assets/employee/
     - assets/chat/
     - assets/profile/
+    - assets/product/
 
     # Heading Fonts
     - assets/fonts/inter/
