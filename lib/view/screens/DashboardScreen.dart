@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:kelolapps/config/kelolaku/color_style.dart';
-import 'package:kelolapps/route/route_helper.dart';
+import 'package:kelolapps/router/route_helper.dart';
 import 'package:kelolapps/view/screens/fragments/main_board/home_fragment.dart';
 import 'package:kelolapps/view/screens/fragments/main_board/product_fragment.dart';
 

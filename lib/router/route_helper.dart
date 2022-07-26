@@ -32,6 +32,7 @@ import 'package:kelolapps/view/screens/other_menu/StoreSettingScreen.dart';
 
 import '../splashscreen.dart';
 import '../view/screens/mywork/promotion/CreateCouponScreen.dart';
+import '../view/screens/mywork/promotion/UpdatePaketBundleScreen.dart';
 
 Map<String, WidgetBuilder> routes() {
   return <String, WidgetBuilder>{
@@ -135,9 +136,16 @@ class RouteHelper {
   static const String createStoreCouponPage = '/create-store-coupon';
   static  String getCreateStoreCouponPage () => '$createStoreCouponPage';
 
-
+  //Update Promo
+  static const String updatePaketBundlePage = '/update-paket-bundle';
+  static  String getUpdatePaketBundlePage () => '$updatePaketBundlePage';
 
   static List<GetPage> routes = [
+
+    //Update Promo
+    GetPage(name: updatePaketBundlePage, page: ()=>UpdatePaketBundleScreen()),
+
+
     //Create Promo
     GetPage(name: storePaketBundlePage, page: ()=>PromoPaketBundleScreen()),
     GetPage(name: storeCouponsPage, page: ()=> StoreCouponScreen()),

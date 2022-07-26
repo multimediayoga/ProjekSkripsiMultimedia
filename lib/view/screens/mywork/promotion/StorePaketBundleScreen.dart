@@ -7,7 +7,7 @@ import 'package:kelolapps/view/screens/mywork/promotion/model/PaketBundleRepo.da
 import 'package:nb_utils/nb_utils.dart';
 
 import '../../../../config/kelolaku/color_style.dart';
-import '../../../../route/route_helper.dart';
+import '../../../../router/route_helper.dart';
 import '../../../../utils/dimensions.dart';
 
 class PromoPaketBundleScreen extends StatefulWidget {
@@ -74,7 +74,7 @@ class _PromoPaketBundleScreenState extends State<PromoPaketBundleScreen> {
           textColor: white,
           color: KelolakuGlobalColor.colorPrimaryExtra,
           onTap: () {
-            Get.toNamed(RouteHelper.getStorePaketBundlePage());
+            Get.toNamed(RouteHelper.getCreatePaketBundlePage());
           },
         ),
       ),

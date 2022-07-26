@@ -7,7 +7,7 @@ import 'package:nb_utils/nb_utils.dart';
 
 import '../../../config/image.dart';
 import '../../../helper/reusable_widget.dart';
-import '../../../route/route_helper.dart';
+import '../../../router/route_helper.dart';
 
 class PromoScreen extends StatefulWidget {
   const PromoScreen({Key? key}) : super(key: key);

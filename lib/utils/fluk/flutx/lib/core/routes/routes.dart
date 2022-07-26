@@ -58,7 +58,7 @@ class FxRoutes{
 
     FxRoute? fxRoute = getRouteFromName(routeName);
     if(fxRoute==null)
-      throw("This route is not implemented");
+      throw("This router is not implemented");
 
     if(fxRoute.middlewares!=null) {
       for (FxMiddleware middleware in fxRoute.middlewares!) {
