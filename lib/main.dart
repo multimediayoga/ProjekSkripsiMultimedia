@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
       title: 'Kelolaku Demo',
       debugShowCheckedModeBanner: false,
       theme: lightKelolaku,
-      initialRoute: RouteHelper.storePromo,
+      initialRoute: RouteHelper.storeSetting,
       getPages: RouteHelper.routes,
       defaultTransition: Transition.topLevel,
       transitionDuration: const Duration(milliseconds: 500),
