@@ -35,12 +35,6 @@ class _StoreSettingScreenState extends State<StoreSettingScreen> {
   @override
   Widget build(BuildContext context) {
 
-    const sh_cat_1 = Color(0xFFFA4352);
-    const sh_cat_2 = Color(0xFF34B5C8);
-    const sh_cat_3 = Color(0xFFFED76D);
-    const sh_cat_4 = Color(0xFF0C5A93);
-    const sh_cat_5 = Color(0xFF3CA69B);
-
     const dd1 = "#FA4352";
     const dd2 = "#FED76D";
     const dd3 = "#3CA69B";
@@ -144,9 +138,61 @@ class _StoreSettingScreenState extends State<StoreSettingScreen> {
                               // color: tomato,
                               width: MediaQuery.of(context).size.width,
                               child: colors
-                          )
+                          ),
+                          16.height,
                         ],
                       ),
+                    ),
+                  ),
+                  16.height,
+                  Container(
+                    margin: EdgeInsets.only(top: 8, bottom:8),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: context.cardColor,
+                      boxShadow: [
+                        BoxShadow(color: KelolakuGlobalColor.grayFed.withOpacity(0.3), offset: Offset(0.0, 1.0), blurRadius: 2.0),
+                      ],
+                    ),
+                    padding: EdgeInsets.all(16.0),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Icon(Icons.notifications_active, size: 25, color: KelolakuGlobalColor.deepBlue),
+                            8.width,
+                            Text("Jam Buka Toko", style: secondaryTextStyle()).expand(),
+                          ],
+                        ).onTap(() {
+
+                        }),
+                        16.height,
+                        /*Row(
+                                  children: [
+                                    Image.asset(BHInviteFriendsIcon, height: 23, width: 23, color: BHColorPrimary),
+                                    8.width,
+                                    Text(BHTxtInviteFriends, style: secondaryTextStyle()).expand(),
+                                  ],
+                                ).onTap(() {
+
+                                }),
+                                16.height,
+                                Row(
+                                  children: [
+                                    Image.asset(BHSettingIcon, height: 23, width: 23, color: BHColorPrimary),
+                                    8.width,
+                                    Text(BHTxtSetting, style: secondaryTextStyle()).expand(),
+                                  ],
+                                ).onTap(() {}),
+                                16.height,
+                                Row(
+                                  children: [
+                                    Image.asset(BHTerms_and_ServicesIcon, height: 23, width: 23, color: BHColorPrimary),
+                                    8.width,
+                                    Text(BHTxtTermsOfServices, style: secondaryTextStyle()).expand(),
+                                  ],
+                                ).onTap(() {}),*/
+                      ],
                     ),
                   ),
                 ],
