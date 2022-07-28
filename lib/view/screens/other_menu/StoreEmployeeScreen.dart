@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:kelolapps/config/kelolaku/color_style.dart';
 import 'package:kelolapps/config/kelolaku/text_style.dart';
-import 'package:kelolapps/view/screens/mywork/employee_widget/employee_card.dart';
+import 'package:kelolapps/view/screens/mywork/employee/model/EmployeeRepo.dart';
+import 'package:kelolapps/view/screens/mywork/employee/widget/employee_card.dart';
 import 'package:kelolapps/view/screens/sheets/employee_sheet.dart';
 import 'package:nb_utils/nb_utils.dart';
 
-import '../mywork/model/EmployeeRepo.dart';
 
 class StoreEmployeeScreen extends StatefulWidget {
   const StoreEmployeeScreen({Key? key}) : super(key: key);
@@ -15,7 +15,7 @@ class StoreEmployeeScreen extends StatefulWidget {
 }
 
 class _StoreEmployeeScreenState extends State<StoreEmployeeScreen> {
-  late List<NewQuizModel> mList;
+  late List<EmployeeModel> mList;
   late var accountOwner;
 
   @override

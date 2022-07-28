@@ -8,7 +8,7 @@ import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'package:kelolapps/config/kelolaku/color_style.dart';
 import 'package:kelolapps/theme/light_theme.dart';
 
-import 'route/route_helper.dart';
+import 'router/route_helper.dart';
 import 'helper/get_di.dart' as di;
 
 /*void main() {
@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
       title: 'Kelolaku Demo',
       debugShowCheckedModeBanner: false,
       theme: lightKelolaku,
-      initialRoute: RouteHelper.splash,
+      initialRoute: RouteHelper.storeSetting,
       getPages: RouteHelper.routes,
       defaultTransition: Transition.topLevel,
       transitionDuration: const Duration(milliseconds: 500),

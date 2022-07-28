@@ -17,7 +17,7 @@ abstract class DisposableInterface extends FxLifeCycle
   }
 
   /// Called 1 frame after onInit(). It is the perfect place to enter
-  /// navigation events, like snackbar, dialogs, or a new route, or
+  /// navigation events, like snackbar, dialogs, or a new router, or
   /// async request.
   @override
   void onReady() {

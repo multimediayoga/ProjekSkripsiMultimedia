@@ -471,7 +471,7 @@ class _ChatWhatsAppPageState extends State<ChatWhatsAppPage> {
               topRight: Radius.circular(8));
         }
       } else {
-        return BorderRadius.only(
+        return const BorderRadius.only(
             topLeft: Radius.circular(0),
             bottomRight: Radius.circular(8),
             bottomLeft: Radius.circular(8),

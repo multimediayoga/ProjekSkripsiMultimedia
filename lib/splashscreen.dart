@@ -8,7 +8,7 @@ import 'package:kelolapps/config/image.dart';
 import 'package:kelolapps/config/kelolaku/color_style.dart';
 import 'package:kelolapps/config/kelolaku/constant.dart';
 import 'package:kelolapps/main.dart';
-import 'package:kelolapps/route/route_helper.dart';
+import 'package:kelolapps/router/route_helper.dart';
 import 'package:kelolapps/view/screens/DashboardScreen.dart';
 import 'package:kelolapps/view/screens/LoginScreens.dart';
 import 'package:kelolapps/view/screens/digital_shop/DigitalShopHomeScreen2.dart';
@@ -42,10 +42,10 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
         // if you use this splash screen on the very first time when you open the page, use below code
         // Navigator.of(context).pushAndRemoveUntil(
         //     MaterialPageRoute(builder: (context) => LoginScreen()),
-        //     (Route<dynamic> route) => false);
+        //     (Route<dynamic> router) => false);
         // Get.offNamed(RouteHelper.login);
         // Get.offNamed(RouteHelper.dashboard);
-        Get.offAll(()=>ChatWhatsAppPage());
+        Get.offAll(()=>PromoScreen());
       }
     });
   }

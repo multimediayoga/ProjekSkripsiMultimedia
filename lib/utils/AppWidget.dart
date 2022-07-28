@@ -279,9 +279,11 @@ AppBar appBar(BuildContext context, String title, {List<Widget>? actions, bool s
   );
 }
 
-Widget? Function(BuildContext, String) placeholderWidgetFn() => (_, s) => placeholderWidget();
+Widget? Function(BuildContext, String) placeholderWidgetFn() => (_, s) {
+  return placeholderWidget(null);
+};
 
-Widget placeholderWidget() => Image.asset('$PUBLIC_IMAGES_URL/placeholder.jpg', fit: BoxFit.cover);
+Widget placeholderWidget(String? imageLocation) => Image.asset( imageLocation ?? '$PUBLIC_IMAGES_URL/placeholder.jpg', fit: BoxFit.cover);
 
 String parseHtmlString(String? htmlString) {
   return parse(parse(htmlString).body!.text).documentElement!.text;

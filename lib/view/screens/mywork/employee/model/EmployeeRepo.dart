@@ -1,4 +1,5 @@
-import '../../../../config/kelolaku/constant.dart';
+
+import 'package:kelolapps/config/kelolaku/constant.dart';
 
 const BaseUrl = 'https://assets.iqonic.design/old-themeforest-images/prokit';
 
@@ -14,29 +15,29 @@ const quiz_ic_marketing = "$BaseUrl/images/quiz/quiz_ic_marketing.png";
 const quiz_ic_notification = "$BaseUrl/images/quiz/quiz_ic_notification.png";
 const quiz_ic_study1 = "$BaseUrl/images/quiz/quiz_ic_study1.png";
 const quiz_ic_study2 = "$BaseUrl/images/quiz/quiz_ic_study2.png";
-const quiz_ic_quiz1 = "$EmployeeAsset/quiz_ic_quiz1.png";
-const quiz_ic_quiz2 = "$EmployeeAsset/quiz_ic_quiz2.png";
-const quiz_ic_quiz = "$EmployeeAsset/quiz_ic_quiz.svg";
-const quiz_ic_homes = "$EmployeeAsset/quiz_ic_home.svg";
-const quiz_ic_user = "$EmployeeAsset/quiz_ic_user.svg";
-const quiz_ic_facebook = "$EmployeeAsset/quiz_ic_facebook.svg";
-const quiz_ic_google = "$EmployeeAsset/quiz_ic_google.svg";
-const quiz_ic_mail = "$EmployeeAsset/quiz_ic_mail.svg";
-const quiz_ic_twitter = "$EmployeeAsset/quiz_ic_twitter.svg";
+const quiz_ic_quiz1 = "$EMPLOYEE_IMAGE_URL/quiz_ic_quiz1.png";
+const quiz_ic_quiz2 = "$EMPLOYEE_IMAGE_URL/quiz_ic_quiz2.png";
+const quiz_ic_quiz = "$EMPLOYEE_IMAGE_URL/quiz_ic_quiz.svg";
+const quiz_ic_homes = "$EMPLOYEE_IMAGE_URL/quiz_ic_home.svg";
+const quiz_ic_user = "$EMPLOYEE_IMAGE_URL/quiz_ic_user.svg";
+const quiz_ic_facebook = "$EMPLOYEE_IMAGE_URL/quiz_ic_facebook.svg";
+const quiz_ic_google = "$EMPLOYEE_IMAGE_URL/quiz_ic_google.svg";
+const quiz_ic_mail = "$EMPLOYEE_IMAGE_URL/quiz_ic_mail.svg";
+const quiz_ic_twitter = "$EMPLOYEE_IMAGE_URL/quiz_ic_twitter.svg";
 
-const Quiz_ic_Grid = "$EmployeeAsset/quiz_ic_grid.png";
-const Quiz_ic_List = "$EmployeeAsset/quiz_ic_list.png";
+const Quiz_ic_Grid = "$EMPLOYEE_IMAGE_URL/quiz_ic_grid.png";
+const Quiz_ic_List = "$EMPLOYEE_IMAGE_URL/quiz_ic_list.png";
 const quiz_img_People1 = "$BaseUrl/images/quiz/quiz_img_People1.jpg";
 const quiz_img_People2 = "$BaseUrl/images/quiz/quiz_img_People2.png";
 
-const quiz_ic_list1 = "$EmployeeAsset/quiz_ic_list1.png";
-const quiz_ic_list2 = "$EmployeeAsset/quiz_ic_list2.png";
-const quiz_ic_list3 = "$EmployeeAsset/quiz_ic_list3.png";
-const quiz_ic_list4 = "$EmployeeAsset/quiz_ic_list4.png";
-const quiz_ic_list5 = "$EmployeeAsset/quiz_ic_list5.png";
-const user_my_role = "$EmployeeAsset/quiz_ic_list5.png";
+const quiz_ic_list1 = "$EMPLOYEE_IMAGE_URL/quiz_ic_list1.png";
+const quiz_ic_list2 = "$EMPLOYEE_IMAGE_URL/quiz_ic_list2.png";
+const quiz_ic_list3 = "$EMPLOYEE_IMAGE_URL/quiz_ic_list3.png";
+const quiz_ic_list4 = "$EMPLOYEE_IMAGE_URL/quiz_ic_list4.png";
+const quiz_ic_list5 = "$EMPLOYEE_IMAGE_URL/quiz_ic_list5.png";
+const user_my_role = "$EMPLOYEE_IMAGE_URL/quiz_ic_list5.png";
 
-class NewQuizModel {
+class EmployeeModel {
   var ownerName = "";
   var phoneNumber = "";
   var ownerProfile = "";
@@ -79,8 +80,8 @@ class QuizContactUsModel {
   var subtitle = "";
 }
 
-NewQuizModel geMytUserData(){
-  var userData = NewQuizModel();
+EmployeeModel geMytUserData(){
+  var userData = EmployeeModel();
   userData.ownerName = "Ardian Kolbu (Saya)";
   userData.phoneNumber = "081930128103";
   userData.ownerProfile = user_my_role;
@@ -89,25 +90,25 @@ NewQuizModel geMytUserData(){
   return userData;
 }
 
-List<NewQuizModel> getQuizData() {
-  List<NewQuizModel> list = [];
-  NewQuizModel model1 = NewQuizModel();
+List<EmployeeModel> getQuizData() {
+  List<EmployeeModel> list = [];
+  EmployeeModel model1 = EmployeeModel();
   model1.ownerName = "Raden Roma";
   model1.phoneNumber = "081210003";
   model1.ownerProfile = quiz_ic_course1;
   model1.roleStatus = [ShopRole.Manager.name!, ShopRole.Marketing.name!];
 
-  NewQuizModel model2 = NewQuizModel();
+  EmployeeModel model2 = EmployeeModel();
   model2.ownerName = "Ray Make";
   model2.phoneNumber = "081250003";
   model2.ownerProfile = quiz_ic_course2;
 
-  NewQuizModel model3 = NewQuizModel();
+  EmployeeModel model3 = EmployeeModel();
   model3.ownerName = "Susan Pizzaro";
   model3.phoneNumber = "102552092";
   model3.ownerProfile = quiz_ic_course3;
 
-  NewQuizModel model4 = NewQuizModel();
+  EmployeeModel model4 = EmployeeModel();
   model4.ownerName = "Barron";
   model4.phoneNumber = "879500192";
   model4.ownerProfile = quiz_ic_course1;

@@ -26,6 +26,7 @@ dependencies:
   material_design_icons_flutter: 5.0.5955-rc.1
   flutter_feather_icons: ^2.0.0+1
 
+
   #BASE
   nb_utils: ^4.5.2
   google_fonts: ^2.3.2
@@ -67,8 +68,13 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  flutter_launcher_icons: ^0.9.3
   flutter_lints: ^2.0.1
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/kelolapps/Logo-Icon.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -86,6 +92,7 @@ flutter:
     - assets/employee/
     - assets/chat/
     - assets/profile/
+    - assets/product/
 
     # Heading Fonts
     - assets/fonts/inter/
@@ -135,26 +142,3 @@ flutter:
           weight: 600
         - asset: assets/fonts/manrope/Manrope-Bold.ttf
           weight: 700
-  #
-  # For details regarding fontss from package dependencies,
-  # see https://flutter.dev/custom-fonts/#from-packages
-#     fonts:
-#       -family: Inter
-#        fonts:
-
-#     -  family: manrope
-##        fonts:
-#         - asset: assets/fonts/Manrope-Regular.otf
-#         - asset: assets/font/Manrope-Light.ttf
-#           weight: 100
-#         - asset: assets/font/Manrope-ExtraLight.ttf
-#             weight: 200
-#         - asset: assets/font/Manrope-Light.ttf
-#           weight: 300
-#         - asset: assets/font/Manrope-Medium.ttf
-#           weight: 500
-#         - asset: assets/font/Manrope-Semibold.ttf
-#           weight: 600
-#         #          style: italic
-#         - asset: assets/font/Manrope-Bold.ttf
-#           weight: 700
